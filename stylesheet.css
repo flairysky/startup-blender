@@ -364,7 +364,7 @@ table.talk-schedule tr:nth-child(even) {
 }
 
 table.talk-links tr:hover {
-  background-color: #f7e0b0;
+  background-color: #a4c3ea;
   cursor: pointer;
   /* font-weight: bold; */
 }
