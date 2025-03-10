@@ -207,7 +207,7 @@
 }
 
 nav {
-    background-color: #4ea0e8;
+    background-color: #121B1C;
     padding: 10px;
     text-align: center;
     position: sticky;
@@ -247,7 +247,7 @@ img {
     margin: auto;
 }
 footer {
-    background-color: #4ea0e8;
+    background-color: #121B1C;
     color: black;
     text-align: center;
     padding: 20px;
@@ -295,7 +295,7 @@ ul li {
 }
 
 a {
-  color: #4ea0e8;   /* Orange color for links */
+  color: #121B1C;   /* Orange color for links */
   text-decoration: none;
 }
 
@@ -327,7 +327,7 @@ img.center {
 /* Styling for the announcement box */
 .announcement-box {
 background-color: #a4c3ea;  /* Light orange background */
-border: 1px solid #4ea0e8;  /* Darker orange border */
+border: 1px solid #121B1C;  /* Darker orange border */
 border-radius: 8px;
 padding: 20px;
 margin: 30px auto;  /* Centers the div horizontally */
@@ -382,7 +382,7 @@ table.talk-links thead tr:hover {
 
 /* Footer section */
 footer {
-  background-color: #4ea0e8;  /* Dark orange background */
+  background-color: #121B1C;  /* Dark orange background */
   color: black;
   padding: 20px;
   text-align: center;
