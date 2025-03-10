@@ -215,7 +215,7 @@ nav {
     justify-content: center;
 }
 nav a {
-    color: black;
+    color: white;
     font-family: 'Bitter', serif;
     text-decoration: none;
     padding: 10px 20px;
@@ -383,7 +383,7 @@ table.talk-links thead tr:hover {
 /* Footer section */
 footer {
   background-color: #121B1C;  /* Dark orange background */
-  color: black;
+  color: white;
   padding: 20px;
   text-align: center;
   display: flex;
