@@ -343,7 +343,7 @@ img.center {
 
 /* Styling for the announcement box */
 .announcement-box {
-background-color: #a4c3ea;  /* Light orange background */
+background-color: a4c3ea#;  /* Light orange background */
 border: 1px solid #121B1C;  /* Darker orange border */
 border-radius: 8px;
 padding: 20px;
@@ -494,7 +494,7 @@ footer small {
 
 .sideview {
   display: flex;
-  background-color: #a4c3ea;
+  background-color: #ffffff;
   padding: 10px 20px 10px 20px;
   border-radius: 15px;
 }
