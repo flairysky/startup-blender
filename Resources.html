@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo_SB.png">
+    <title>Start-up Blender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Start-up Blender">
+  <meta property="og:description" content="Where ideas meet Initiative.">
+  <meta property="og:image" content="https://flairysky.github.io/startup-blender/logo_SB.png">
+  <meta property="og:url" content="https://flairysky.github.io/startup-blender/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Start-up Blender">
+  <meta name="twitter:description" content="Where ideas meet Initiative">
+  <meta name="twitter:image" content="https://flairysky.github.io/startup-blender/logo_SB.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Handlee', cursive;
+            background-color: white;
+            color: black;
+            
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            padding: 0 20px;
+            border-bottom: 2px solid white;
+            height: 80px;
+            position: relative;
+        }
+
+        .logo {
+            height: 120px;
+            width: auto;
+            position: absolute;
+            top: -20px;
+            left: 60px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        
+        .instagram-icon {
+            height: 24px; /* Adjust the size of the Instagram icon */
+            width: 24px;
+            display: inline-block;
+        }
+        
+        .instagram-icon:hover {
+    content: url('redinsta.png'); /* Change to the hover image */
+}
+
+        .header-text {
+            text-align: center;
+            font-size: 28px;
+            margin: 15px 0;
+            color: red;
+        }
+
+        .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Reduced shadow for a softer look */
+}
+        a {
+    color: black; /* Default color for links (black) */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+a:hover {
+    color: red; /* Change color to red on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+    font-weight: bold; /* Keep bold on hover */
+}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid white;
+            text-align: left;
+        }
+
+        th {
+            background-color: red;
+            color: black;
+        }
+
+         .two-column-table {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 0 auto;
+            background-color: #f9f1ed;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .two-column-table div {
+            flex: 45% 45%;
+            box-sizing: border-box;
+        }
+
+        .two-column-table h4 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .two-column-table ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+     
+        
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .footer-text b {
+            color: red;
+        }
+/* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: 10px;
+        }
+
+        .logo {
+            position: static; /* Prevent absolute positioning on mobile */
+            margin: 0 auto; /* Center the logo */
+            height: 60px; /* Adjust size for mobile */
+            display: block;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .instagram-icon {
+            height: 30px; /* Slightly larger for easier tapping */
+            margin-top: 10px;
+        }
+    }
+html {
+        scroll-behavior: smooth;
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: 10px;
+        }
+
+        .logo {
+            position: static; /* Prevent absolute positioning on mobile */
+            margin: 0 auto; /* Center the logo */
+            height: 60px; /* Adjust size for mobile */
+            display: block;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .instagram-icon {
+            height: 30px; /* Slightly larger for easier tapping */
+            margin-top: 10px;
+        }
+    }
+<style>
+    /* Glow effect on logo */
+    .logo {
+        height: 120px;
+        width: auto;
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    .logo:hover {
+        filter: drop-shadow(0 0 20px rgba(237, 21, 21, 0.7));
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+        .logo {
+            position: static;
+            margin: 0 auto;
+            height: 60px;
+            display: block;
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+
+        .logo:hover {
+            filter: drop-shadow(0 0 15px rgba(237, 21, 21, 0.7));
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="header-text">For bold and coragous ones!</div>
+    <nav>
+    <a href="index.html" class="logo-link">
+        <img src="logo_SB.png" alt="Logo" class="logo">
+    </a>
+    <div class="nav-links">
+             
+    </div>
+</nav>
+
+<p style="text-align: center;">
+    Coming soon...
+</p>
