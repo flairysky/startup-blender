@@ -232,7 +232,7 @@ html {
             margin-top: 10px;
         }
     }
-<style>
+
     /* Glow effect on logo */
     .logo {
         height: 120px;
@@ -263,21 +263,147 @@ html {
             transform: scale(1.05); /* Slightly enlarge on hover */
         }
     }
+    @media (max-width: 768px) {
+
+}
+
+.toggle-section {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers children horizontally */
+}
+
+.toggle-button {
+  width: 80%; /* or any fixed width like 300px */
+  max-width: 400px;
+  text-align: left;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+
+.toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-list {
+  display: none;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0em;
+  list-style-type: disc;
+}
+
+.toggle-list li {
+  margin-bottom: 0.5em;
+}
+
+.toggle-list a {
+  color: red;
+  text-decoration: none;
+}
+
+.toggle-list a:hover {
+  text-decoration: underline;
+}
 </style>
 
 </head>
 
 <body>
-    <div class="header-text">For bold and coragous ones!</div>
+        <div class="header-text">Be <b>Bold</b> and <b>Brave</b>!</div>
     <nav>
     <a href="index.html" class="logo-link">
         <img src="logo_SB.png" alt="Logo" class="logo">
     </a>
     <div class="nav-links">
-             
+        <a href="index.html#Current Discussions" style="white-space: nowrap;">Current Discussions</a>
+        <a href="index.html#How to join" style="white-space: nowrap;">How to Join</a>
+        <a href="Resources.html" style="white-space: nowrap;">Resources</a>
+        <a href="index.html#About">About</a>
+        <a href="https://www.instagram.com/startupblender/">
+            <img src="instagram-white-icon.svg" alt="Instagram" class="instagram-icon">
+        </a>        
     </div>
 </nav>
+</nav>
+<main class="content"></main>
+<script>
+    function toggleList(id) {
+      const list = document.getElementById(id);
+      list.style.display = list.style.display === "none" ? "block" : "none";
+    }
+  </script>
 
 <p style="text-align: center;">
-    Coming soon...
+    Here you can find some useful resources for your start-up journey.
+    <br>We have no affiliation with any of them besides those related SPH ETH. 
 </p>
+
+<div class="toggle-section">
+          <button class="toggle-button" onclick="toggleList('Ideation')">
+            Ideation
+          </button>
+          <div id="Ideation" class="toggle-list" style="display: none;">
+            <ul>
+                <li>
+                    <a href="https://sph.ethz.ch/curiosity-session" target="_blank" rel="noopener noreferrer">Curiosity session at SPH ETH</a>
+                </li>
+            </ul>
+          </div>
+          <button class="toggle-button" onclick="toggleList('AfterIdea')">
+            I have Idea, now what?
+          </button>
+          <div id="AfterIdea" class="toggle-list" style="display: none;">
+            <ul>
+                <li>
+                    <p style="text-align: center;">
+                     We will add here some useful resources soon... 
+                    </p>
+                </li>
+            </ul>
+          </div>
+          <button class="toggle-button" onclick="toggleList('Users')">
+            Getting first users
+          </button>
+          <div id="Users" class="toggle-list" style="display: none;">
+            <ul>
+                <li>
+                    <p style="text-align: center;">
+                     We will add here some useful resources soon... 
+                    </p>
+                </li>
+            </ul>
+          </div>
+          <button class="toggle-button" onclick="toggleList('Funding')">
+            Funding
+          </button>
+          <div id="Funding" class="toggle-list" style="display: none;">
+            <ul>
+                <li>
+                    <p style="text-align: center;">
+                     We will add here some useful resources soon...
+                    </p>
+                </li>
+                </ul>
+          </div>
+        </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>&copy; <b>2025 Start-up Blender ~ Where ideas meet Initiative</b> </p>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
